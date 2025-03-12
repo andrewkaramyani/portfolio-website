@@ -356,7 +356,7 @@ const projects = [
             }
         ],
         image: coptic,
-         source_code_link:
+        live_demo:
             "https://donors.copticorphans.org",
     },
     {
@@ -387,8 +387,8 @@ const projects = [
             },
         ],
         image: hits,
-         source_code_link:
-            "https://hitsskills.com"
+         live_demo:
+            "https://hitsskills.net"
     },
 ];
 
@@ -419,4 +419,11 @@ const testimonials = [
     },
 ];
 
-export {services, technologies, experiences, testimonials, projects};
+const contactInfo=
+    {
+        name : "Andrew Nashaat Karam",
+        mobile : "+02 01276682005",
+        email : "andrewnashat23@gmail.com"
+    }
+
+export {services, technologies, experiences, testimonials, projects,contactInfo};

@@ -6,6 +6,8 @@ import {styles} from "../styles";
 import {EarthCanvas} from "./canvas";
 import {SectionWrapper} from "../hoc";
 import {slideIn} from "../utils/motion";
+import { contactInfo } from "../constants";
+
 
 const Contact = () => {
     const formRef = useRef();
@@ -81,8 +83,14 @@ const Contact = () => {
                 variants={slideIn("left", "tween", 0.2, 1)}
                 className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
             >
+                
                 <p className={styles.sectionSubText}>Get in touch</p>
                 <h3 className={styles.sectionHeadText}>Contact.</h3>
+
+                <p className={styles.sectionSubText}>{contactInfo.name}</p>
+                <p className={styles.sectionSubText}>{contactInfo.mobile}</p>
+                <p className={styles.sectionSubText}>{contactInfo.email}</p>
+
 
                 <form
                     ref={formRef}
