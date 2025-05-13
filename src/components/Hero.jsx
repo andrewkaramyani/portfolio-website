@@ -50,7 +50,7 @@ const Hero = () => {
                         target="_blank"
               >
                 My Resume
-              </a>
+              </a> 
             </button>
           </div>
         </div>
